@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roundtable Cast</title>
+  <meta name="description" content="A native macOS app where AI personas debate, role-play, and tell stories live. Bring your own API key from Anthropic, OpenAI, Gemini, OpenRouter, Groq, or Mistral.">
+  <style>
+    :root {
+      --bg-top: #fff7eb;
+      --bg-bot: #f5e0c8;
+      --text: #231923;
+      --muted: #5f505a;
+      --accent: #dc5a64;
+      --link: #825fc3;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bot) 100%);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 80px 32px 64px;
+    }
+    h1 {
+      font-family: "New York", "Times New Roman", serif;
+      font-size: 56px;
+      font-weight: 600;
+      letter-spacing: -1px;
+      margin-bottom: 12px;
+    }
+    h1 .accent { color: var(--accent); }
+    .tagline {
+      font-size: 22px;
+      color: var(--muted);
+      margin-bottom: 48px;
+    }
+    h2 {
+      font-family: "New York", "Times New Roman", serif;
+      font-size: 28px;
+      font-weight: 600;
+      margin-top: 48px;
+      margin-bottom: 16px;
+    }
+    p { margin-bottom: 16px; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style: none; padding: 0; margin: 16px 0; }
+    ul li {
+      padding: 10px 0 10px 28px;
+      position: relative;
+    }
+    ul li::before {
+      content: "•";
+      color: var(--accent);
+      position: absolute;
+      left: 8px;
+      font-size: 20px;
+    }
+    .links {
+      margin-top: 48px;
+      padding: 24px;
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 12px;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+    }
+    .links h3 {
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+    .links a {
+      display: block;
+      padding: 8px 0;
+    }
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Roundtable <span class="accent">Cast</span></h1>
+    <p class="tagline">Watch AI personas debate, role-play, and tell stories — live.</p>
+
+    <p>Roundtable Cast is a native macOS app where a cast of AI personas converse in turn on a topic you set. Each bot has its own persona, voice, and accent color. You can sit back and watch, or steer the conversation.</p>
+
+    <h2>Bring your own key</h2>
+    <p>Roundtable Cast doesn't ship API keys. You connect your own from one of six providers. You pay the provider directly, per token. Your keys are stored locally in macOS Keychain.</p>
+    <ul>
+      <li>Anthropic Claude</li>
+      <li>OpenAI</li>
+      <li>Google Gemini</li>
+      <li>OpenRouter</li>
+      <li>Groq</li>
+      <li>Mistral</li>
+    </ul>
+
+    <h2>Privacy by design</h2>
+    <p>No telemetry. No analytics. No accounts. Conversations are persisted only on your Mac. Network requests go directly from your Mac to the provider you chose — never to us.</p>
+
+    <div class="links">
+      <h3>Resources</h3>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+      <a href="https://apps.apple.com/app/roundtable-cast/">Mac App Store</a>
+    </div>
+
+    <footer>
+      © 2026 Cristiano Cavo · <a href="mailto:cristianocavo@icloud.com">cristianocavo@icloud.com</a>
+    </footer>
+  </div>
+</body>
+</html>

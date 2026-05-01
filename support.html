@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support — Roundtable Cast</title>
+  <meta name="description" content="Support and help for Roundtable Cast macOS app. Contact, FAQ, troubleshooting.">
+  <style>
+    :root {
+      --bg-top: #fff7eb;
+      --bg-bot: #f5e0c8;
+      --text: #231923;
+      --muted: #5f505a;
+      --accent: #dc5a64;
+      --link: #825fc3;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bot) 100%);
+      min-height: 100vh;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 64px 32px 64px;
+    }
+    .nav { margin-bottom: 32px; font-size: 14px; }
+    .nav a { color: var(--link); text-decoration: none; }
+    .nav a:hover { text-decoration: underline; }
+    h1 {
+      font-family: "New York", "Times New Roman", serif;
+      font-size: 44px;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      margin-bottom: 24px;
+    }
+    h2 {
+      font-family: "New York", "Times New Roman", serif;
+      font-size: 24px;
+      font-weight: 600;
+      margin-top: 40px;
+      margin-bottom: 12px;
+    }
+    h3 {
+      font-size: 17px;
+      font-weight: 600;
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+    p { margin-bottom: 14px; color: var(--text); }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code {
+      background: rgba(0, 0, 0, 0.06);
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-family: "SF Mono", Menlo, monospace;
+      font-size: 14px;
+    }
+    .contact {
+      padding: 24px;
+      background: rgba(255, 255, 255, 0.55);
+      border-radius: 12px;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      margin-bottom: 32px;
+    }
+    .contact a { font-weight: 500; }
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="nav"><a href="index.html">← Roundtable Cast</a></nav>
+    <h1>Support</h1>
+
+    <div class="contact">
+      <strong>Need help?</strong> Email <a href="mailto:cristianocavo@icloud.com?subject=Roundtable%20Cast%20support">cristianocavo@icloud.com</a>. Reply within 48 hours on weekdays.
+    </div>
+
+    <h2>Getting started</h2>
+
+    <h3>I need an API key. Where do I get one?</h3>
+    <p>Roundtable Cast supports six LLM providers. Sign up directly with the provider of your choice — most offer a free tier:</p>
+    <ul>
+      <li><strong>Anthropic Claude:</strong> <a href="https://console.anthropic.com/">console.anthropic.com</a></li>
+      <li><strong>OpenAI:</strong> <a href="https://platform.openai.com/api-keys">platform.openai.com/api-keys</a></li>
+      <li><strong>Google Gemini:</strong> <a href="https://aistudio.google.com/apikey">aistudio.google.com/apikey</a> (generous free tier)</li>
+      <li><strong>OpenRouter:</strong> <a href="https://openrouter.ai/keys">openrouter.ai/keys</a> (one key, many models)</li>
+      <li><strong>Groq:</strong> <a href="https://console.groq.com/keys">console.groq.com/keys</a></li>
+      <li><strong>Mistral:</strong> <a href="https://console.mistral.ai/api-keys">console.mistral.ai/api-keys</a></li>
+    </ul>
+
+    <h3>How do I add my API key?</h3>
+    <p>Open Settings (gear icon, top-right), pick a provider, paste your key, click Save. The key is stored securely in macOS Keychain.</p>
+
+    <h3>Why don't I see any output?</h3>
+    <p>Most common causes:</p>
+    <ul>
+      <li>API key missing or invalid → check Settings</li>
+      <li>No internet connection → check network</li>
+      <li>Provider rate limit / quota exceeded → check the provider's dashboard</li>
+      <li>Less than 2 bots configured → add at least 2 bots in the sidebar</li>
+    </ul>
+
+    <h2>Tips</h2>
+
+    <h3>How do I get better conversations?</h3>
+    <p>Persona text is everything. Be specific about voice, length, and quirks. <code>"Reply in 1–2 short sentences"</code> works. Vague personas make vague bots.</p>
+
+    <h3>What's the difference between round-robin and moderator mode?</h3>
+    <p><strong>Round-robin</strong> cycles through bots in order — predictable, cheap. <strong>Moderator mode</strong> uses a small extra LLM call to pick the next speaker based on context — better for storytelling. Costs around 30% more tokens.</p>
+
+    <h3>How do I export a conversation?</h3>
+    <p>Toolbar top-right, Export icon. Save as Markdown, plain text, or JSON. Or copy to clipboard.</p>
+
+    <h2>Privacy</h2>
+    <p>Roundtable Cast collects no data. See the full <a href="privacy.html">Privacy Policy</a>.</p>
+
+    <h2>Bug reports</h2>
+    <p>Email <a href="mailto:cristianocavo@icloud.com?subject=Roundtable%20Cast%20bug%20report">cristianocavo@icloud.com</a> with:</p>
+    <ul>
+      <li>App version (Settings → About, or in App Store Connect)</li>
+      <li>macOS version</li>
+      <li>What you were doing</li>
+      <li>What happened vs. what you expected</li>
+      <li>Screenshot if relevant</li>
+    </ul>
+
+    <footer>
+      © 2026 Cristiano Cavo · <a href="mailto:cristianocavo@icloud.com">cristianocavo@icloud.com</a>
+    </footer>
+  </div>
+</body>
+</html>

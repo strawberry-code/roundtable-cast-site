@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Roundtable Cast</title>
+  <meta name="description" content="Privacy policy for Roundtable Cast macOS app. No data collection, no tracking, no accounts.">
+  <style>
+    :root {
+      --bg-top: #fff7eb;
+      --bg-bot: #f5e0c8;
+      --text: #231923;
+      --muted: #5f505a;
+      --accent: #dc5a64;
+      --link: #825fc3;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bot) 100%);
+      min-height: 100vh;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 64px 32px 64px;
+    }
+    .nav { margin-bottom: 32px; font-size: 14px; }
+    .nav a { color: var(--link); text-decoration: none; }
+    .nav a:hover { text-decoration: underline; }
+    h1 {
+      font-family: "New York", "Times New Roman", serif;
+      font-size: 44px;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+    .updated { color: var(--muted); font-size: 14px; margin-bottom: 40px; }
+    h2 {
+      font-family: "New York", "Times New Roman", serif;
+      font-size: 24px;
+      font-weight: 600;
+      margin-top: 40px;
+      margin-bottom: 12px;
+    }
+    h3 {
+      font-size: 17px;
+      font-weight: 600;
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+    p { margin-bottom: 14px; color: var(--text); }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { padding-left: 24px; margin: 12px 0; }
+    ul li { margin-bottom: 8px; }
+    code {
+      background: rgba(0, 0, 0, 0.06);
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-family: "SF Mono", Menlo, monospace;
+      font-size: 14px;
+    }
+    .summary {
+      padding: 20px 24px;
+      background: rgba(255, 255, 255, 0.55);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      margin-bottom: 32px;
+    }
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="nav"><a href="index.html">← Roundtable Cast</a></nav>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 2 May 2026</p>
+
+    <div class="summary">
+      <strong>TL;DR:</strong> Roundtable Cast does not collect, store, or transmit any user data to Cristiano Cavo or any third party. No analytics, no telemetry, no accounts. Your API keys live in macOS Keychain. Conversations live on your Mac.
+    </div>
+
+    <h2>Data handling</h2>
+
+    <h3>API keys</h3>
+    <p>API keys you enter into Roundtable Cast are stored locally in the macOS Keychain. They are never transmitted to Cristiano Cavo. They are sent only to the provider you configured (Anthropic, OpenAI, Google, OpenRouter, Groq, or Mistral) as part of authenticated API requests.</p>
+
+    <h3>Conversations</h3>
+    <p>All conversations, bot personas, and table state are stored locally inside the app's sandbox container at <code>~/Library/Containers/com.strawberry.roundtable.mas/</code>. They are never transmitted to Cristiano Cavo.</p>
+
+    <h3>Network requests</h3>
+    <p>When you start a conversation, Roundtable Cast sends LLM API requests directly from your Mac to the provider you configured. Cristiano Cavo is not a party to these requests and does not receive a copy of any prompt, response, or metadata. The provider's privacy policy applies to those requests:</p>
+    <ul>
+      <li><a href="https://www.anthropic.com/privacy">Anthropic</a></li>
+      <li><a href="https://openai.com/policies/privacy-policy">OpenAI</a></li>
+      <li><a href="https://policies.google.com/privacy">Google (Gemini)</a></li>
+      <li><a href="https://openrouter.ai/privacy">OpenRouter</a></li>
+      <li><a href="https://groq.com/privacy-policy/">Groq</a></li>
+      <li><a href="https://mistral.ai/terms/">Mistral</a></li>
+    </ul>
+
+    <h3>Crash reports</h3>
+    <p>If you have opted in to share diagnostics with app developers in macOS System Settings, Apple may forward anonymized aggregate crash data through App Store Connect. Cristiano Cavo receives no personally identifying information through this channel.</p>
+
+    <h3>Analytics</h3>
+    <p>None. Roundtable Cast contains no analytics SDK, no telemetry, and no remote logging.</p>
+
+    <h2>Children</h2>
+    <p>Roundtable Cast is not directed at children under 13. The app rating is 4+ for its UI; however, the LLM providers' content is generated dynamically and may not be appropriate for all ages. Parental oversight is recommended.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the updated date at the top of this page will reflect the change. Material changes to data handling will be announced via app update release notes.</p>
+
+    <h2>Contact</h2>
+    <p>Cristiano Cavo<br>
+    <a href="mailto:cristianocavo@icloud.com">cristianocavo@icloud.com</a></p>
+
+    <footer>
+      © 2026 Cristiano Cavo
+    </footer>
+  </div>
+</body>
+</html>
